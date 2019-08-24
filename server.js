@@ -1,7 +1,8 @@
 const PORT = process.env.PORT || 4000;
 const express = require('express');
 const server = express();
-const carRouter = require('./data/cars/carRouter.js.js');
+const helmet = require('helmet');
+const carRouter = require('./data/cars/carRouter.js');
 
 server.use(express.json());
 server.use(helmet());
